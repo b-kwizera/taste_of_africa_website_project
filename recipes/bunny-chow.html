@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to make Bunny Chow from South Africa: ingredients, steps, nutrition and video.">
+  <title>Bunny Chow | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../recipes.html" class="active" aria-current="page">Recipes</a></li>
+          <li><a href="../regions/west-africa.html">West Africa</a></li>
+          <li><a href="../regions/north-africa.html">North Africa</a></li>
+          <li><a href="../regions/east-africa.html">East Africa</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>Bunny Chow</h1>
+      <p>A hollowed-out loaf of bread filled with spicy Durban curry.</p>
+    </div>
+    <div class="container recipe-layout">
+      <div>
+        <article>
+          <figure>
+            <img class="recipe-hero-img" src="../images/bunny-chow.jpg" alt="A plate of Bunny Chow, a traditional dish from South Africa">
+            <figcaption class="sr-only">Bunny Chow from South Africa</figcaption>
+          </figure>
+          <h2 style="margin-top:1.5rem">About this dish</h2>
+          <p>Bunny chow was created in Durban, South Africa, by the city's Indian community. It is a hollowed-out loaf of bread filled with a hot curry of lamb, mutton or beans. The bread acts as an edible bowl, and you eat it with your fingers by tearing off the bread and dipping it in the curry.</p>
+          <p class="recipe-meta"><span>🌍 South Africa</span><span>⏱ Prep 20 min · Cook 1 h 30 min</span></p>
+          <button type="button" class="fav-btn" data-id="bunny-chow" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+        </article>
+        <section class="recipe-box" style="margin-top:1.5rem" aria-labelledby="map-h">
+          <h2 id="map-h">Where it comes from</h2>
+          <div class="map-wrap">
+          <iframe src="https://maps.google.com/maps?q=South+Africa&amp;output=embed" title="Map of South Africa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+      </div>
+      <div>
+        <section class="recipe-box" aria-labelledby="ing-h">
+          <h2 id="ing-h">Ingredients</h2>
+          <div class="servings">
+            <span id="servings-label">Servings:</span>
+            <button type="button" id="servings-minus" aria-label="Decrease servings">&minus;</button>
+            <output id="servings-count" data-base="4" aria-labelledby="servings-label" aria-live="polite">4</output>
+            <button type="button" id="servings-plus" aria-label="Increase servings">+</button>
+          </div>
+          <ul class="ingredients">
+      <li><span class="amount" data-base="800">800</span> g lamb shoulder, cubed</li>
+      <li><span class="amount" data-base="2">2</span> onions, chopped</li>
+      <li><span class="amount" data-base="4">4</span> cloves garlic</li>
+      <li><span class="amount" data-base="2">2</span> tbsp ginger, grated</li>
+      <li><span class="amount" data-base="3">3</span> tbsp Durban <mark>masala</mark> or hot curry powder</li>
+      <li><span class="amount" data-base="2">2</span> potatoes, cubed</li>
+      <li><span class="amount" data-base="400">400</span> g tinned tomatoes</li>
+      <li><span class="amount" data-base="2">2</span> curry leaf sprigs</li>
+      <li><span class="amount" data-base="3">3</span> tbsp vegetable oil</li>
+      <li><span class="amount" data-base="1">1</span> white loaf, unsliced, cut into quarters</li>
+          </ul>
+        </section>
+        <section class="recipe-box" aria-labelledby="ins-h">
+          <h2 id="ins-h">Cooking instructions</h2>
+          <details open>
+            <summary>Show / hide the steps</summary>
+            <ol>
+              <li>Heat the oil, fry the onions until golden, then add the garlic and ginger for 1 minute.</li>
+              <li>Stir in the masala and curry leaves and cook for 1 minute until fragrant.</li>
+              <li>Add the lamb and brown on all sides, then add the tomatoes and a cup of water.</li>
+              <li>Simmer covered for 1 hour, add the potatoes, and cook 25 minutes more until tender.</li>
+              <li>Hollow out each loaf quarter, keep the bread "lid", and spoon in the curry.</li>
+              <li>Serve hot, using the bread lid to scoop.</li>
+            </ol>
+          </details>
+        </section>
+        <section class="recipe-box" aria-labelledby="nut-h">
+          <h2 id="nut-h">Nutritional facts</h2>
+          <table>
+            <caption>Approximate values per serving</caption>
+            <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Calories</th><td>610 kcal</td></tr>
+              <tr><th scope="row">Carbohydrates</th><td>58 g</td></tr>
+              <tr><th scope="row">Protein</th><td>36 g</td></tr>
+              <tr><th scope="row">Fat</th><td>27 g</td></tr>
+              <tr><th scope="row">Fibre</th><td>5 g</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="recipe-box" aria-labelledby="vid-h">
+          <h2 id="vid-h">Video tutorial</h2>
+          <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/B5qIbFqmQvQ" title="Bunny chow recipe by Andy Cooks" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="../recipes.html">All recipes</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The food culture, staples and techniques of North Africa.">
+  <title>North Africa | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../recipes.html">Recipes</a></li>
+          <li><a href="../regions/west-africa.html">West Africa</a></li>
+          <li><a href="../regions/north-africa.html" class="active" aria-current="page">North Africa</a></li>
+          <li><a href="../regions/east-africa.html">East Africa</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>North Africa</h1>
+      <p>Aromatic and gently sweet, North African cuisine blends Berber, Arab and Mediterranean traditions.</p>
+    </div>
+    <div class="container section">
+      <img class="region-hero" src="../images/north-africa.jpg" alt="A colourful spice shop in Marrakech, Morocco">
+      <div class="two-col" style="margin-top:2rem">
+        <div class="region-text">
+          <h2>Food culture</h2>
+          <p>Cooking in the Maghreb is slow and fragrant. Families gather around steaming platters of <mark>couscous</mark> on Fridays, and spice markets sell blends such as <mark>ras el hanout</mark> made from dozens of spices. Sweet and savoury flavours meet in dishes with dried fruit, olives and preserved lemon.</p>
+          <h2>Staple ingredients</h2>
+          <ul>
+            <li>Couscous and semolina</li>
+            <li>Olives, dates and preserved lemons</li>
+            <li>Lamb, chicken and chickpeas</li>
+            <li>Cumin, saffron, cinnamon and harissa</li>
+          </ul>
+          <h2>Cooking techniques</h2>
+          <ul>
+            <li>Slow-cooking in a clay <mark>tagine</mark></li>
+            <li>Steaming couscous in a <mark>couscoussier</mark></li>
+            <li>Preserving lemons in salt</li>
+            <li>Baking bread in communal wood ovens</li>
+          </ul>
+        </div>
+        <section aria-labelledby="v-h">
+          <h2 id="v-h">Watch &amp; learn</h2>
+          <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/owSFQsZXj-o" title="Authentic Moroccan chicken tagine" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+      </div>
+      <h2 class="section-title" style="margin-top:3rem">Example dishes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="../images/tagine.jpg" alt="Chicken Tagine" loading="lazy">
+          <div class="card-body"><h3>Chicken Tagine</h3><p>Chicken slow-cooked with preserved lemons and olives in a conical clay pot.</p><a class="card-link" href="../recipes/tagine.html">View recipe &rarr;</a></div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="../recipes.html">All recipes</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

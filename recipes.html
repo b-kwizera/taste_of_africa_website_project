@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse African recipes and filter by region.">
+  <title>Recipes | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
+          <li><a href="regions/west-africa.html">West Africa</a></li>
+          <li><a href="regions/north-africa.html">North Africa</a></li>
+          <li><a href="regions/east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>African Recipes</h1>
+      <p>Pick a region to filter the dishes, and tap the heart to save your favourites for later.</p>
+    </div>
+    <section class="section container" aria-labelledby="rec-h">
+      <h2 id="rec-h" class="sr-only">Recipe list</h2>
+      <div class="filter-bar" role="group" aria-label="Filter recipes by region">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="west-africa">West Africa</button>
+        <button type="button" class="filter-btn" data-filter="east-africa">East Africa</button>
+        <button type="button" class="filter-btn" data-filter="north-africa">North Africa</button>
+      </div>
+      <div class="grid">
+        <article class="card recipe-card" data-region="west-africa" data-id="jollof-rice">
+          <img src="images/jollof-rice.jpg" alt="Jollof Rice from Nigeria" loading="lazy">
+          <div class="card-body">
+            <span class="tag">West Africa</span>
+            <h3>Jollof Rice</h3>
+            <p>A smoky, tomato-rich one-pot rice that headlines every celebration across West Africa.</p>
+            <div class="card-actions">
+              <a class="card-link" href="recipes/jollof-rice.html">View recipe &rarr;</a>
+              <button type="button" class="fav-btn" data-id="jollof-rice" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="north-africa" data-id="tagine">
+          <img src="images/tagine.jpg" alt="Chicken Tagine from Morocco" loading="lazy">
+          <div class="card-body">
+            <span class="tag">North Africa</span>
+            <h3>Chicken Tagine</h3>
+            <p>Chicken slow-cooked with preserved lemons and olives in a conical clay pot.</p>
+            <div class="card-actions">
+              <a class="card-link" href="recipes/tagine.html">View recipe &rarr;</a>
+              <button type="button" class="fav-btn" data-id="tagine" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="east-africa" data-id="injera">
+          <img src="images/injera.jpg" alt="Injera with Doro Wat from Ethiopia" loading="lazy">
+          <div class="card-body">
+            <span class="tag">East Africa</span>
+            <h3>Injera with Doro Wat</h3>
+            <p>Spongy fermented teff flatbread used to scoop up spicy Ethiopian stews.</p>
+            <div class="card-actions">
+              <a class="card-link" href="recipes/injera.html">View recipe &rarr;</a>
+              <button type="button" class="fav-btn" data-id="injera" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="east-africa" data-id="bunny-chow">
+          <img src="images/bunny-chow.jpg" alt="Bunny Chow from South Africa" loading="lazy">
+          <div class="card-body">
+            <span class="tag">Southern Africa</span>
+            <h3>Bunny Chow</h3>
+            <p>A hollowed-out loaf of bread filled with spicy Durban curry.</p>
+            <div class="card-actions">
+              <a class="card-link" href="recipes/bunny-chow.html">View recipe &rarr;</a>
+              <button type="button" class="fav-btn" data-id="bunny-chow" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="east-africa" data-id="isombe">
+          <img src="images/isombe.jpg" alt="Isombe from Rwanda" loading="lazy">
+          <div class="card-body">
+            <span class="tag">East Africa</span>
+            <h3>Isombe</h3>
+            <p>Rwanda's beloved dish of pounded cassava leaves simmered with groundnuts.</p>
+            <div class="card-actions">
+              <a class="card-link" href="recipes/isombe.html">View recipe &rarr;</a>
+              <button type="button" class="fav-btn" data-id="isombe" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="recipes.html">All recipes</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

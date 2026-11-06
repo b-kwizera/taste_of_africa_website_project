@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The food culture, staples and techniques of East Africa.">
+  <title>East Africa | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../recipes.html">Recipes</a></li>
+          <li><a href="../regions/west-africa.html">West Africa</a></li>
+          <li><a href="../regions/north-africa.html">North Africa</a></li>
+          <li><a href="../regions/east-africa.html" class="active" aria-current="page">East Africa</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>East Africa</h1>
+      <p>From Ethiopian highland stews to Swahili coastal curries and Rwandan leaf dishes, East Africa is full of variety.</p>
+    </div>
+    <div class="container section">
+      <img class="region-hero" src="../images/east-africa.jpg" alt="Piles of spices at a market in Zanzibar">
+      <div class="two-col" style="margin-top:2rem">
+        <div class="region-text">
+          <h2>Food culture</h2>
+          <p>The Ethiopian table revolves around <mark>injera</mark>, shared from one large platter and eaten by hand. On the Swahili coast, trade with Arabia and India brought cardamom, clove and coconut into the kitchen, while Rwandan and Ugandan cooks simmer leaves and beans in groundnut sauces.</p>
+          <h2>Staple ingredients</h2>
+          <ul>
+            <li>Teff, maize (ugali) and sorghum</li>
+            <li>Beans, lentils and leafy greens</li>
+            <li>Coconut, plantain and cassava</li>
+            <li>Berbere, cardamom, clove and cinnamon</li>
+          </ul>
+          <h2>Cooking techniques</h2>
+          <ul>
+            <li>Fermenting <mark>teff</mark> batter for injera</li>
+            <li>Slow-simmering onions for wat stews</li>
+            <li>Cooking with <mark>coconut milk</mark> on the coast</li>
+            <li>Pounding and boiling cassava leaves</li>
+          </ul>
+        </div>
+        <section aria-labelledby="v-h">
+          <h2 id="v-h">Watch &amp; learn</h2>
+          <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/eXib0fMIeKU" title="Cooking Ethiopian injera and doro wat" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+      </div>
+      <h2 class="section-title" style="margin-top:3rem">Example dishes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="../images/injera.jpg" alt="Injera with Doro Wat" loading="lazy">
+          <div class="card-body"><h3>Injera with Doro Wat</h3><p>Spongy fermented teff flatbread used to scoop up spicy Ethiopian stews.</p><a class="card-link" href="../recipes/injera.html">View recipe &rarr;</a></div>
+        </article>
+        <article class="card">
+          <img src="../images/isombe.jpg" alt="Isombe" loading="lazy">
+          <div class="card-body"><h3>Isombe</h3><p>Rwanda's beloved dish of pounded cassava leaves simmered with groundnuts.</p><a class="card-link" href="../recipes/isombe.html">View recipe &rarr;</a></div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="../recipes.html">All recipes</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

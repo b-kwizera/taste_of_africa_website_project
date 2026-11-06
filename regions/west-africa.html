@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The food culture, staples and techniques of West Africa.">
+  <title>West Africa | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../recipes.html">Recipes</a></li>
+          <li><a href="../regions/west-africa.html" class="active" aria-current="page">West Africa</a></li>
+          <li><a href="../regions/north-africa.html">North Africa</a></li>
+          <li><a href="../regions/east-africa.html">East Africa</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>West Africa</h1>
+      <p>Bold, smoky and generously spiced, West African cooking is built around rice, yams, plantains and fiery peppers.</p>
+    </div>
+    <div class="container section">
+      <img class="region-hero" src="../images/west-africa.jpg" alt="A vendor grilling suya skewers in West Africa">
+      <div class="two-col" style="margin-top:2rem">
+        <div class="region-text">
+          <h2>Food culture</h2>
+          <p>Food in West Africa is social. Meals are shared from large communal bowls, and dishes such as <mark>jollof rice</mark> are the centrepiece of weddings and festivals. Cooks layer flavour with a base of tomato, onion and pepper, then finish with locally fermented seasonings like <mark>iru</mark> (locust beans).</p>
+          <h2>Staple ingredients</h2>
+          <ul>
+            <li>Rice, millet and sorghum</li>
+            <li>Yam, cassava and plantain</li>
+            <li>Black-eyed peas and groundnuts</li>
+            <li>Palm oil and scotch bonnet peppers</li>
+          </ul>
+          <h2>Cooking techniques</h2>
+          <ul>
+            <li>Slow stewing in a <mark>tomato-pepper base</mark></li>
+            <li>Open-fire grilling (suya and kebabs)</li>
+            <li>Pounding fufu in a mortar</li>
+            <li>Steaming rice under foil for a smoky finish</li>
+          </ul>
+        </div>
+        <section aria-labelledby="v-h">
+          <h2 id="v-h">Watch &amp; learn</h2>
+          <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/EfZEArZcfAY" title="Nigerian party jollof rice" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+      </div>
+      <h2 class="section-title" style="margin-top:3rem">Example dishes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="../images/jollof-rice.jpg" alt="Jollof Rice" loading="lazy">
+          <div class="card-body"><h3>Jollof Rice</h3><p>A smoky, tomato-rich one-pot rice that headlines every celebration across West Africa.</p><a class="card-link" href="../recipes/jollof-rice.html">View recipe &rarr;</a></div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="../recipes.html">All recipes</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

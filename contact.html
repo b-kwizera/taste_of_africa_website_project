@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Taste of Africa.">
+  <title>Contact | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions/west-africa.html">West Africa</a></li>
+          <li><a href="regions/north-africa.html">North Africa</a></li>
+          <li><a href="regions/east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>Contact Us</h1>
+      <p>Questions, recipe ideas or just want to say hello? Write to us.</p>
+    </div>
+    <section class="section container" aria-labelledby="form-h">
+      <h2 id="form-h" class="sr-only">Contact form</h2>
+      <form id="contact-form" class="form-card" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="country-search">Or type your country</label>
+          <input type="text" id="country-search" name="country-search" list="country-list" placeholder="Start typing...">
+          <datalist id="country-list">
+            <option value="Nigeria"></option>
+            <option value="Ghana"></option>
+            <option value="Senegal"></option>
+            <option value="Morocco"></option>
+            <option value="Egypt"></option>
+            <option value="Ethiopia"></option>
+            <option value="Kenya"></option>
+            <option value="Rwanda"></option>
+            <option value="South Africa"></option>
+            <option value="Tanzania"></option>
+            <option value="United States"></option>
+            <option value="United Kingdom"></option>
+            <option value="Canada"></option>
+            <option value="Other"></option>
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us more (more than 20 characters)" aria-describedby="message-error" required></textarea>
+          <p id="message-error" class="error-msg" role="alert"></p>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+      <div id="confirmation" class="confirmation hidden" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="recipes.html">All recipes</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

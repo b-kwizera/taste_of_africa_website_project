@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover African recipes, regions and food culture.">
+  <title>Home | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions/west-africa.html">West Africa</a></li>
+          <li><a href="regions/north-africa.html">North Africa</a></li>
+          <li><a href="regions/east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="container hero-inner">
+        <div>
+          <h1 id="hero-h">Welcome to the Taste of Africa</h1>
+          <p>Journey through a continent of flavour. From <mark>smoky jollof</mark> in Lagos to <mark>fragrant tagines</mark> in Marrakech and <mark>spicy berbere</mark> in Addis Ababa, discover the recipes and stories behind Africa's tables.</p>
+          <a class="btn" href="recipes.html">Explore recipes</a>
+        </div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/1zyDUkdVZ0E" title="Introduction to African food culture" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="feat-h">
+      <h2 id="feat-h" class="section-title">Featured Dishes</h2>
+      <p class="section-intro">Four signature dishes that tell the story of the continent. Each is built on key ingredients such as <mark>tomatoes</mark>, <mark>teff</mark>, <mark>saffron</mark> and <mark>cassava leaves</mark>.</p>
+      <div class="grid">
+        <figure class="card">
+          <img src="images/jollof-rice.jpg" alt="Jollof Rice from Nigeria" loading="lazy">
+          <div class="card-body">
+            <figcaption>Jollof Rice</figcaption>
+            <p>A smoky, tomato-rich one-pot rice that headlines every celebration across West Africa.</p>
+            <a class="card-link" href="recipes/jollof-rice.html">Get the recipe &rarr;</a>
+          </div>
+        </figure>
+        <figure class="card">
+          <img src="images/tagine.jpg" alt="Chicken Tagine from Morocco" loading="lazy">
+          <div class="card-body">
+            <figcaption>Chicken Tagine</figcaption>
+            <p>Chicken slow-cooked with preserved lemons and olives in a conical clay pot.</p>
+            <a class="card-link" href="recipes/tagine.html">Get the recipe &rarr;</a>
+          </div>
+        </figure>
+        <figure class="card">
+          <img src="images/injera.jpg" alt="Injera with Doro Wat from Ethiopia" loading="lazy">
+          <div class="card-body">
+            <figcaption>Injera with Doro Wat</figcaption>
+            <p>Spongy fermented teff flatbread used to scoop up spicy Ethiopian stews.</p>
+            <a class="card-link" href="recipes/injera.html">Get the recipe &rarr;</a>
+          </div>
+        </figure>
+        <figure class="card">
+          <img src="images/isombe.jpg" alt="Isombe from Rwanda" loading="lazy">
+          <div class="card-body">
+            <figcaption>Isombe</figcaption>
+            <p>Rwanda's beloved dish of pounded cassava leaves simmered with groundnuts.</p>
+            <a class="card-link" href="recipes/isombe.html">Get the recipe &rarr;</a>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="reg-h">
+      <h2 id="reg-h" class="section-title">Explore by Region</h2>
+      <div class="grid">
+        <a class="card region-card" href="regions/west-africa.html">
+          <img src="images/west-africa.jpg" alt="A vendor grilling suya skewers in West Africa" loading="lazy">
+          <div class="card-body"><h3>West Africa</h3><p>Smoky grills, jollof rice and bold pepper heat.</p></div>
+        </a>
+        <a class="card region-card" href="regions/north-africa.html">
+          <img src="images/north-africa.jpg" alt="A colourful spice shop in Marrakech, Morocco" loading="lazy">
+          <div class="card-body"><h3>North Africa</h3><p>Fragrant tagines, couscous and ancient spice markets.</p></div>
+        </a>
+        <a class="card region-card" href="regions/east-africa.html">
+          <img src="images/east-africa.jpg" alt="Piles of spices at a market in Zanzibar" loading="lazy">
+          <div class="card-body"><h3>East Africa</h3><p>Teff, coconut and the spices of the Swahili coast.</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="news-h">
+      <h2 id="news-h" class="section-title">Latest Food Trends</h2>
+      <div class="news-list">
+        <article class="news">
+          <img src="images/news-couscous.jpg" alt="A bowl of couscous" loading="lazy">
+          <h3>Couscous goes global</h3>
+          <time datetime="2026-10-12">2026-10-12</time>
+          <p>Steamed <mark>couscous</mark>, a Berber staple, is turning up on menus worldwide as chefs rediscover its hand-rolled tradition.</p>
+        </article>
+        <article class="news">
+          <img src="images/news-suya.jpg" alt="Suya meat being prepared for grilling" loading="lazy">
+          <h3>Suya street food hits the world stage</h3>
+          <time datetime="2026-09-28">2026-09-28</time>
+          <p>Nigerian <mark>suya</mark> skewers, rubbed with spicy yaji peanut spice, are now a favourite at international food festivals.</p>
+        </article>
+        <article class="news">
+          <img src="images/news-spices.jpg" alt="Spices from Zanzibar" loading="lazy">
+          <h3>Zanzibar's spice farms revive heritage cooking</h3>
+          <time datetime="2026-09-05">2026-09-05</time>
+          <p>Cloves, cardamom and <mark>cinnamon</mark> from the spice island are inspiring a new wave of Swahili cuisine.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="recipes.html">All recipes</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>

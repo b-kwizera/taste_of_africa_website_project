@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to make Injera with Doro Wat from Ethiopia: ingredients, steps, nutrition and video.">
+  <title>Injera with Doro Wat | Taste of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">🌍 Taste of Africa</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../recipes.html" class="active" aria-current="page">Recipes</a></li>
+          <li><a href="../regions/west-africa.html">West Africa</a></li>
+          <li><a href="../regions/north-africa.html">North Africa</a></li>
+          <li><a href="../regions/east-africa.html">East Africa</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>Injera with Doro Wat</h1>
+      <p>Spongy fermented teff flatbread used to scoop up spicy Ethiopian stews.</p>
+    </div>
+    <div class="container recipe-layout">
+      <div>
+        <article>
+          <figure>
+            <img class="recipe-hero-img" src="../images/injera.jpg" alt="A plate of Injera with Doro Wat, a traditional dish from Ethiopia">
+            <figcaption class="sr-only">Injera with Doro Wat from Ethiopia</figcaption>
+          </figure>
+          <h2 style="margin-top:1.5rem">About this dish</h2>
+          <p>Injera is the foundation of Ethiopian and Eritrean meals. This sour, spongy flatbread is made from <mark>teff</mark>, a tiny ancient grain, fermented for several days. Meals are served on one large shared injera and eaten by hand, tearing off pieces to scoop up stews such as doro wat, a slow-cooked chicken stew seasoned with <mark>berbere</mark> spice.</p>
+          <p class="recipe-meta"><span>🌍 Ethiopia</span><span>⏱ Prep 30 min + 3 days fermenting · Cook 45 min</span></p>
+          <button type="button" class="fav-btn" data-id="injera" aria-pressed="false"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+        </article>
+        <section class="recipe-box" style="margin-top:1.5rem" aria-labelledby="map-h">
+          <h2 id="map-h">Where it comes from</h2>
+          <div class="map-wrap">
+          <iframe src="https://maps.google.com/maps?q=Ethiopia&amp;output=embed" title="Map of Ethiopia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+      </div>
+      <div>
+        <section class="recipe-box" aria-labelledby="ing-h">
+          <h2 id="ing-h">Ingredients</h2>
+          <div class="servings">
+            <span id="servings-label">Servings:</span>
+            <button type="button" id="servings-minus" aria-label="Decrease servings">&minus;</button>
+            <output id="servings-count" data-base="4" aria-labelledby="servings-label" aria-live="polite">4</output>
+            <button type="button" id="servings-plus" aria-label="Increase servings">+</button>
+          </div>
+          <ul class="ingredients">
+      <li><span class="amount" data-base="300">300</span> g <mark>teff</mark> flour</li>
+      <li><span class="amount" data-base="500">500</span> ml water, plus extra for the batter</li>
+      <li><span class="amount" data-base="1">1</span> tsp salt</li>
+      <li><span class="amount" data-base="6">6</span> chicken drumsticks</li>
+      <li><span class="amount" data-base="3">3</span> large red onions, finely chopped</li>
+      <li><span class="amount" data-base="3">3</span> tbsp <mark>berbere</mark> spice mix</li>
+      <li><span class="amount" data-base="3">3</span> tbsp niter kibbeh or butter</li>
+      <li><span class="amount" data-base="4">4</span> cloves garlic</li>
+      <li><span class="amount" data-base="4">4</span> boiled eggs</li>
+          </ul>
+        </section>
+        <section class="recipe-box" aria-labelledby="ins-h">
+          <h2 id="ins-h">Cooking instructions</h2>
+          <details open>
+            <summary>Show / hide the steps</summary>
+            <ol>
+              <li>Whisk the teff flour with 500 ml water, cover loosely, and ferment at room temperature for 2–3 days until bubbly and sour.</li>
+              <li>Thin the batter with a little water to a crepe-batter consistency and add the salt.</li>
+              <li>Pour a thin spiral of batter onto a hot, non-stick pan, cover for 2 minutes. Do not flip. The surface should be full of tiny holes.</li>
+              <li>For the doro wat, cook the onions dry in a pot for 15 minutes, then add the niter kibbeh, garlic and berbere.</li>
+              <li>Add the chicken and 250 ml water, simmer 40 minutes, then add the boiled eggs.</li>
+              <li>Serve the stew on top of the injera.</li>
+            </ol>
+          </details>
+        </section>
+        <section class="recipe-box" aria-labelledby="nut-h">
+          <h2 id="nut-h">Nutritional facts</h2>
+          <table>
+            <caption>Approximate values per serving</caption>
+            <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Calories</th><td>460 kcal</td></tr>
+              <tr><th scope="row">Carbohydrates</th><td>52 g</td></tr>
+              <tr><th scope="row">Protein</th><td>30 g</td></tr>
+              <tr><th scope="row">Fat</th><td>16 g</td></tr>
+              <tr><th scope="row">Fibre</th><td>7 g</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="recipe-box" aria-labelledby="vid-h">
+          <h2 id="vid-h">Video tutorial</h2>
+          <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/eXib0fMIeKU" title="Cooking Ethiopian food: injera, doro wat and berbere" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Taste of Africa</h2>
+        <p>Celebrating the flavours, ingredients and stories of African cuisine.</p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="../recipes.html">All recipes</a></li>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Newsletter</h2>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="newsletter-msg" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa by Bodgar Kwizera.</p>
+  </footer>
+</body>
+</html>
